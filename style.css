@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: black;
+}
+header .top-header {
+    padding: 12px 0px;
+    color: #FFF;
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+header .top-header p:not(:last-child)::after {
+    content: "|";
+    margin: 0 10px;
+}
+header hr {
+    border: 1px solid rgba(128, 128, 128, 0.232);
+}
+header .mid-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px;
+}
+header .mid-header img {
+    width: 5%;
+}
+header .mid-header .menu-button {
+    width: 30px;
+    height: 30px;
+    background-color: currentColor;
+    border: none;
+    cursor: pointer;
+}
+header .mid-header .menu-button span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+}
+header .mid-header .search-container {
+    position: relative;
+    display: inline-block;
+}
+header .mid-header .search-container input {
+    width: 85%;
+    padding: 5px 40px 5px 5px;
+    color: #FFF;
+    background-color: black;
+    font-size: 14px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    outline: none;
+}
+header .mid-header .search-container .icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+    pointer-events: none;
+}
+header .mid-header .icons i {
+    color: #FFF;
+    margin-left: 12px;
+}
+header .bottom-menu nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+header .bottom-menu nav ul a {
+    position: absolute;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 300;
+    cursor: pointer;
+}
+header .bottom-menu nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+header .bottom-menu nav ul a:hover::after {
+    width: 100%;
+}
+.sidebar {
+    display: block;
+    top: 0px;
+    left: 0;
+    translate: 0px 0px;
+    min-height: 100vh;
+    min-width: 200px;
+    width: 200px;
+    position: fixed;
+    background-color: #333;
+    translate: -100% 0px;
+    transition: 0.5s ease;
+}
+.sidebar nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0px;
+    list-style: none;
+}
+.sidebar nav ul li {
+    margin: 20px 0px;
+}
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+}
+.sidebar.open {
+    translate: 0px 0px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    header .top-header {
+        display: block;
+    }
+    header .top-header p:not(:last-child)::after {
+        content: "";
+    }
+
+    header .mid-header img {
+        width: 12%;
+    }
+    header .mid-header .search-container {
+        display: none;
+    }
+
+    header .bottom-menu {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+    header .mid-header .menu-button {
+        display: none;
+    }
+}
