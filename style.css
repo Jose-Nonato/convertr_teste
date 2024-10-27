@@ -135,7 +135,6 @@ header .bottom-menu nav ul a:hover::after {
 .sidebar.open {
     translate: 0px 0px;
 }
-
 /* Mobile */
 @media (max-width: 768px) {
     header .top-header {
@@ -156,10 +155,51 @@ header .bottom-menu nav ul a:hover::after {
         display: none;
     }
 }
-
 /* Desktop */
 @media (min-width: 769px) {
     header .mid-header .menu-button {
         display: none;
+    }
+}
+
+
+/* Banner Section */
+main #main_banner {
+    background-image: url('assets/main_banner_desktop.jpg');
+    background-size: cover;
+    height: 750px;
+}
+main #main_banner .info {
+    width: 30%;
+    padding: 20% 0px 0px 5%;
+    text-align: center;
+}
+main #main_banner .info h2, main #main_banner .info p {
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 5px;
+}
+main #main_banner .info button {
+    padding: 15px 18px;
+    margin-top: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: none;
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+}
+/* Mobile */
+@media (max-width: 768px) {
+    main #main_banner {
+        background-image: url('assets/main_banner_mobile.png');
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+    }
+    main #main_banner .info {
+        width: 70%;
+        padding: 40% 0px 0px 2%;
     }
 }
