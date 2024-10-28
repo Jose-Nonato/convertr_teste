@@ -255,3 +255,182 @@ main #lacoste .info button {
         padding: 10px 0px;
     }
 }
+
+/* Snickers Store */
+main #sneacker-store .container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin: auto;
+    background-image: url('assets/snickers_store.png');
+    background-size: cover;
+    background-position: center;
+}
+main #sneacker-store .container .info {
+    position: absolute;
+    width: 45%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    padding: 1vw, 2vw;
+    text-align: center;
+}
+main #sneacker-store img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+main #sneacker-store .container .info .title {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 2px 8px;
+}
+main #sneacker-store .container .info .text {
+    font-size: 14px;
+    padding: 8px;
+    letter-spacing: 2px;
+}
+main #sneacker-store .container .info button {
+    margin: 10px 0px;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #000;
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    main #sneacker-store .container {
+        background-image: none;
+        height: 300px;
+    }
+    main #sneacker-store img {
+        display: inline-block;
+    }
+    main #sneacker-store .container .info {
+        width: 80%;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+/* Daniel Suggestion */
+main #daniel-suggestion .container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin: auto;
+    background-image: url('assets/daniel_background_desktop.png');
+    background-size: cover;
+    background-position: center;
+}
+main #daniel-suggestion .info {
+    position: absolute;
+    width: 45%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    padding: 1vw, 2vw;
+    text-align: center;
+}
+main #daniel-suggestion img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+main #daniel-suggestion .title {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 2px 8px;
+}
+main #daniel-suggestion .text {
+    font-size: 14px;
+    padding: 8px;
+    letter-spacing: 2px;
+}
+main #daniel-suggestion button {
+    margin: 10px 0px;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #000;
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+    cursor: pointer;
+}
+main #daniel-suggestion span {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+@media (max-width: 768px) {
+    main #daniel-suggestion .container {
+        background-image: none;
+        height: 300px;
+    }
+    main #daniel-suggestion img {
+        display: inline-block;
+    }
+    main #daniel-suggestion .container .info {
+        width: 80%;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+/* Apresentation Section */
+main #apresentation {
+    width: 70%;
+    margin: auto;
+    padding: 7rem 0px 4rem 0px;
+    text-align: center;
+}
+main #apresentation img {
+    padding-bottom: 10px;
+}
+main #apresentation p {
+    padding: 5px 0px;
+    letter-spacing: 2px;
+}
+
+/* Newsletter Section */
+main #newsletter {
+    background-color: #000;
+    text-align: center;
+    padding: 2.5rem;
+}
+main #newsletter h2 {
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 200;
+    padding-bottom: 15px;
+}
+main #newsletter form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+main #newsletter form input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    margin: 1rem 0;
+}
+main #newsletter form button {
+    width: 20%;
+    margin: auto;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #FFF;
+    border: none;
+    border-radius: 2px;
+}
