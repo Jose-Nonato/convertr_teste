@@ -203,3 +203,55 @@ main #main_banner .info button {
         padding: 40% 0px 0px 2%;
     }
 }
+
+/* Category Section */
+
+
+/* Lacoste Snickers Section */
+main #lacoste {
+    background-color: #F6F6F6;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main #lacoste img {
+    width: 40%;
+}
+main #lacoste .info {
+    text-align: center;
+}
+main #lacoste .info .title {
+    font-size: 40px;
+    padding: 10px 0px;
+}
+main #lacoste .info .subtitle {
+    width: 70%;
+    margin: 0 auto;
+}
+main #lacoste .info button {
+    margin: 10px 0px;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #000;
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    main #lacoste {
+        flex-direction: column-reverse;
+        background-color: #FFF;
+    }
+    main #lacoste img {
+        width: 100%;
+    }
+    main #lacoste .info img {
+        width: 50%;
+    }
+    main #lacoste .info {
+        padding: 10px 0px;
+    }
+}

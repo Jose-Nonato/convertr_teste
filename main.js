@@ -8,21 +8,21 @@ $(document).ready(function() {
                     arrows: false,
                     autoplay: true,
                     autoplaySpeed: 3000,
-                });
+                })
             }
         } else {
             if ($('.top-header').hasClass('slick-initialized')) {
-                $('.top-header').slick('unslick');
+                $('.top-header').slick('unslick')
             }
         }
     }
 
-    initializeSlick();
+    initializeSlick()
 
     $(window).on('resize', function() {
-        initializeSlick();
-    });
-});
+        initializeSlick()
+    })
+})
 
 
 // Responsividade sidebar
@@ -41,3 +41,6 @@ document.addEventListener('click', (event) => {
         sidebar.classList.remove('open')
     }
 })
+
+
+// Slider Category
