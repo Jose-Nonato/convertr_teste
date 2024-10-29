@@ -48,3 +48,32 @@ function toggleDropdown(contentId) {
     const content = document.getElementById(contentId)
     content.style.display = content.style.display === "block" ? "none" : "block"
 }
+
+
+// Carrosel Categoria
+let currentIndex = 0;
+
+function showSlides(index) {
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const visibleSlides = 3;
+
+    if (index >= totalSlides / visibleSlides) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = Math.floor(totalSlides / visibleSlides) - 1;
+    } else {
+        currentIndex = index;
+    }
+
+    const offset = -currentIndex * 100 / visibleSlides;
+    document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+}
+
+// Inicializa com o primeiro grupo de slides
+showSlides(currentIndex);
+
+// Avança automaticamente a cada 5 segundos
+setInterval(() => {
+    showSlides(currentIndex + 1);
+}, 5000);
