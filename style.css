@@ -309,6 +309,199 @@ main #lacoste .info button {
     }
 }
 
+/* Recommendation Section */
+#recommendation {
+    padding: 20px 0px 20px 20px;
+}
+#recommendation p {
+    padding-bottom: 15px;
+}
+#recommendation .container {
+    display: flex;
+}
+#recommendation .container .card {
+    margin-right: 10px;
+}
+#recommendation .container .card img {
+    width: 80%;
+}
+#recommendation .container .card .title {
+    font-size: small;
+}
+#recommendation .container .card .price {
+    font-size: medium;
+}
+#recommendation .container .card .full-price {
+    text-decoration: solid line-through green;
+    font-size: small;
+}
+#recommendation .container .card .parcels {
+    font-size: 9px;
+}
+#recommendation .container .card p:last-child {
+    font-size: smaller;
+}
+
+/* Sold Section */
+#sold {
+    padding: 20px 0px 20px 20px;
+    background-color: #F1EEEE;
+    margin: 20px 0px;
+}
+#sold p {
+    padding-bottom: 15px;
+}
+#sold .container {
+    display: flex;
+}
+#sold .container .card {
+    margin-right: 10px;
+}
+#sold .container .card img {
+    width: 80%;
+}
+#sold .container .card .title {
+    font-size: small;
+}
+#sold .container .card .price {
+    font-size: medium;
+}
+#sold .container .card .full-price {
+    text-decoration: solid line-through green;
+    font-size: small;
+}
+#sold .container .card .parcels {
+    font-size: 9px;
+}
+#sold .container .card p:last-child {
+    font-size: smaller;
+}
+
+/* Glasses Section */
+#glasses {
+    padding: 20px 0px 20px 20px;
+    margin: 20px 0px;
+}
+#glasses p {
+    padding-bottom: 15px;
+}
+#glasses .container {
+    display: flex;
+}
+#glasses .container .card {
+    margin-right: 10px;
+}
+#glasses .container .card img {
+    width: 80%;
+}
+#glasses .container .card .title {
+    font-size: small;
+}
+#glasses .container .card .price {
+    font-size: medium;
+}
+#glasses .container .card .full-price {
+    text-decoration: solid line-through green;
+    font-size: small;
+}
+#glasses .container .card .parcels {
+    font-size: 9px;
+}
+#glasses .container .card p:last-child {
+    font-size: smaller;
+}
+
+/* Perfumes Section */
+#perfumes {
+    padding: 20px 0px 20px 20px;
+    margin: 20px 0px;
+}
+#perfumes p {
+    padding-bottom: 15px;
+}
+#perfumes .container {
+    display: flex;
+}
+#perfumes .container .card {
+    margin-right: 10px;
+}
+#perfumes .container .card img {
+    width: 80%;
+}
+#perfumes .container .card .title {
+    font-size: small;
+}
+#perfumes .container .card .price {
+    font-size: medium;
+}
+#perfumes .container .card .full-price {
+    text-decoration: solid line-through green;
+    font-size: small;
+}
+#perfumes .container .card .parcels {
+    font-size: 9px;
+}
+#perfumes .container .card p:last-child {
+    font-size: smaller;
+}
+
+/* Accessories Section */
+#accessories {
+    padding: 20px 0px 20px 20px;
+    margin: 20px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+    color: #FFF;
+}
+#accessories p {
+    font-size: xx-large;
+    width: 20%;
+}
+#accessories .container {
+    display: flex;
+}
+#accessories .container .card {
+    margin-right: 10px;
+    width: 100%;
+}
+#accessories .container .card img {
+    width: 60%;
+}
+#accessories .container .card .title {
+    font-size: small;
+    width: 100%;
+}
+#accessories .container .card .price {
+    font-size: medium;
+}
+#accessories .container .card .full-price {
+    text-decoration: solid line-through green;
+    font-size: small;
+}
+#accessories .container .card .parcels {
+    font-size: 9px;
+}
+#accessories .container .card p:last-child {
+    font-size: smaller;
+}
+
+/* Avaliations Section */
+#avaliations {
+    padding: 20px 0px 20px 20px;
+}
+#avaliations .container {
+    display: flex;
+    padding: 50px 0px;
+}
+#avaliations .container .card p {
+    padding: 10px 0px 5px 0px;
+    font-size: small;
+    width: 80%;
+}
+
 /* Snickers Store */
 main #sneacker-store .container {
     position: relative;
