@@ -167,7 +167,8 @@ header .bottom-menu nav ul a:hover::after {
 main #main_banner {
     background-image: url('assets/main_banner_desktop.jpg');
     background-size: cover;
-    height: 750px;
+    background-position: center;
+    height: 700px;
 }
 main #main_banner .info {
     width: 30%;
@@ -487,6 +488,21 @@ main #lacoste .info button {
 #accessories .container .card p:last-child {
     font-size: smaller;
 }
+@media (max-width: 768px) {
+    #accessories {
+        flex-direction: column;
+        padding: 20px 0px;
+        text-align: center;
+    }
+    #accessories p {
+        width: 100%;
+        font-size: medium;
+        padding: 15px 0px;
+    }
+    #accessories .container {
+        flex-direction: column;
+    }
+}
 
 /* Avaliations Section */
 #avaliations {
@@ -500,6 +516,13 @@ main #lacoste .info button {
     padding: 10px 0px 5px 0px;
     font-size: small;
     width: 80%;
+}
+@media (max-width: 768px) {
+    #avaliations .container {
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+    }
 }
 
 /* Snickers Store */
