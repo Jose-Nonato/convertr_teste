@@ -16,8 +16,8 @@ O projeto consiste em uma página estática que replica o design do arquivo PSD 
 ## 📂 Estrutura do Projeto
 ```
 ├── assets/         # Arquivos de imagens, fontes e outros recursos
-├── style.css       # Arquivos CSS e SCSS
-├── main.js         # Arquivos JavaScript (opcional)
+├── style.css       # Arquivos CSS
+├── main.js         # Arquivos JavaScript
 ├── index.html      # Página principal
 └── README.md       # Documentação do projeto
 ```
