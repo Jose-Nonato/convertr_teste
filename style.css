@@ -273,6 +273,27 @@ main #main_banner .info button {
     }
 }
 
+/* Partners Section */
+#partners {
+    text-align: center;
+    padding: 50px 0px;
+}
+#partners .img-desktop {
+    width: 70%;
+}
+#partners .img-mobile {
+    display: none;
+    width: 80%;
+}
+@media (max-width: 768px) {
+    #partners .img-mobile {
+        display: inline-block;
+    }
+    #partners .img-desktop {
+        display: none;
+    }
+}
+
 /* Lacoste Snickers Section */
 main #lacoste {
     background-color: #F6F6F6;
